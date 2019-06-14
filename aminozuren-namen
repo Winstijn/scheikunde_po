@@ -1,0 +1,10 @@
+var t = ["alanine ", "ala ", " A ", " arginine ", " arg ", " R ", " asparagine ", " asn ", " N ", " asparaginezuur ", " asp ", " D ", " cysteine ", " cys ", " C ", " glutamine ", " gln ", " Q ", " glutaminezuur", " glu ", " E ", " glycine ", " gly ", " G ", " histidine ", " his ", " H ", " isoleucine ", " ile ", " I ", " leucine ", " leu ", " L ", " lysine ", " lys ", " K ", " methionine ", " met ", " M ", " phenylalanine ", " phe ", " F ", " proline ", " pro ", " P ", " serine ", " ser ", " S ", " threonine ", " thr ", " T ", " tryptofaan ", " trp ", " W ", " tyrosine ", " tyr ", " Y ", " valine ", " val ", " V"]
+var aminoDict = {}
+
+for (let i = 0; i < t.length; i+= 3) {
+    const key = t[i + 2].replace(/\s/g, "")
+    aminoDict[key] = {}
+    aminoDict[key].name = t[i].replace(/\s/g, "")
+    aminoDict[key].shortCode = t[i + 1].replace(/\s/g, "")
+}
+

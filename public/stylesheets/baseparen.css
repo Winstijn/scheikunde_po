@@ -1,0 +1,96 @@
+/* //
+//  Scheikunde PO
+//  Joren Hofmeester, Fyor Klein Gunnewiek,
+//  Yvonne Wijfjes, Winstijn Smit 
+//
+//  Created by Winstijn Smit
+//  Copyright © 2019 Kaziaat B.V. All rights reserved.
+// */
+
+
+body {
+    background-color: coral;
+    font-family: system-ui;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#top div {
+    margin: 5px;
+    cursor: pointer;
+}
+
+#top .selected {
+    color: lightskyblue;
+}
+
+#toast-container {
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+}
+
+body #base-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    border: none;
+    font-size: 100px;
+    text-align: center;
+    outline-width: 0;
+    color: transparent;
+    text-shadow: 0 0 0 #ffffff;
+    width: 90%;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+#base-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-size: 100px;
+    opacity: 1; /* Firefox */
+  }
+
+
+#amino-list {
+    display: none;
+    position: absolute;
+    top: 30vh;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    text-align: center;
+    border: 0;
+    border-radius: 2.5px;
+    border-color: transparent;
+    padding: 30px;
+    font-size: 30px;
+    color: cornflowerblue;
+}
+
+input.amino-mode {
+    top: 20vh !important;
+}
+
+#footer {
+    bottom: 2px;
+    position: absolute;
+    left: 6px;
+    color: black;
+}
+  
+select#translation-mode {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    height: 2rem;
+    width: unset;
+}

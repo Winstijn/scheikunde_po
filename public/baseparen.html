@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stylesheets/baseparen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>            
+    <script src="/js/data.js"></script>
+    <script src="/js/baseparen.js"></script>
+    <title>SK Baseparen</title>
+</head>
+<body>
+    <div id="top">
+        <div id="DNA-mode" class="browser-default" onclick="setMode('DNA', true)">DNA (1)</div>
+        <div>|</div>
+        <div id="RNA-mode" class="browser-default" onclick="setMode('RNA', true)">RNA (2)</div>
+        <div>|</div>
+        <div id="AMINO-mode" class="browser-default" onclick="setMode('AMINO', true)">AMINO (3)</div>
+
+        <select id="translation-mode" class="browser-default">
+            <option value="1">Letterlijke vertaling</option>
+            <option value="2">Complementair</option>
+            <option value="3">Reverse Complementair</option>
+        </select>
+
+    </div>
+    <input type="text" class="browser-default" placeholder="Vul een DNA in..." id="base-input" autofocus>
+    <ul id="amino-list">
+
+    </ul>
+
+    <div id="footer"> 5V 2019 | Fyor, Joren, Winstijn en Yvonne.</div>
+</body>
+</html>
