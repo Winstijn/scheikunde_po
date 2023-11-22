@@ -5,6 +5,7 @@ services:
     build:
       context: ..
       dockerfile: .deployment/Dockerfile
+    restart: unless-stopped
     # Exposes port 3000.
 
 networks:
