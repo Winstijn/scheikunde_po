@@ -5,6 +5,10 @@ services:
     build:
       context: ..
       dockerfile: .deployment/Dockerfile
+    # Exposes port 3000.
 
-    ports:
-      - "80:3000"
+networks:
+  default:
+    external: true
+    name: proxy
+
