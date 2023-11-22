@@ -1,0 +1,6 @@
+.deployment/
+.git/
+.gitignore
+.dockerignore
+.ruby-gemset
+.ruby-version

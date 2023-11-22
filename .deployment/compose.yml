@@ -1,0 +1,13 @@
+# docker compose up --build
+# Also allow for ports to be exposed with service-ports
+# docker compose run --build --service-ports app
+version: '3'
+services:
+  app:
+    container_name: "scheikunde_po"
+    build:
+      context: ..
+      dockerfile: .deployment/Dockerfile
+
+    ports:
+      - "3000:3000"
